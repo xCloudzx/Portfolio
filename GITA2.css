@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+h1{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.projectsContainer{
+    margin: auto;
+    text-align: center;
+}
+
+.projectsContainer > div{
+    display: inline-block;
+    margin: 5px;
+    width: 60vw;
+    background-color: #97CAEF;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.projectsContainer > div > div{
+    position: relative;
+    overflow: hidden;
+}:hover > a > img{
+   filter: blur(5px); 
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+    transition: filter linear 0.5s;
+        -webkit-transition: -webkit-filter linear 0.5s;
+        -moz-transition: -moz-filter linear 0.5s;
+        -o-transition: -o-filter linear 0.5s;
+        -ms-transition: -ms-filter linear 0.5s;
+}:hover > p{
+    opacity: 1 !important;
+    transition: opacity 0.5s;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+        -ms-transition: opacity 0.5s;
+}
+
+.projectsContainer > div > div > a{
+    color: black;
+}
+
+.projectsContainer > div > div > a > img{
+    width: 100%;
+}
+
+.projectsContainer > div > h3, .projectsContainer > div > h4{
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+}
+
+.projectsContainer > div > div > a > p{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (min-width: 768px){
+    .projectsContainer > div{
+        width: 30vw;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .projectsContainer > div{
+        width: 25vw;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .projectsContainer > div{
+        width: 20vw;
+    }
+}

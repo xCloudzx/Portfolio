@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,800");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+
+.topHeader{
+    font-family: Montserrat, Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    text-align: center;
+}
+
+.dice{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.die{
+    display: inline-block;
+    font-family: Work Sans, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.die p{
+    margin-top: 0;
+}
+
+.sumP{
+    margin-top: 0;
+    font-family: Work Sans, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.rollButton{
+    display: block;
+    margin: auto;
+    font-family: Work Sans, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.output{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.output > div{
+    display: inline-block;
+}
+
+.output h2{
+    margin: 0;
+    font-family: Montserrat, Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.output textarea{
+    resize: none;
+    font-family: Work Sans, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}

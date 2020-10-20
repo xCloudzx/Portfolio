@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,800");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+
+.topHeader{
+    text-align: center;
+    font-family: Montserrat, Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+}
+
+.crapsBoard{
+    float: left;
+    width: 60%;
+    height: 50%;
+    border: 3px solid gray;
+}
+
+#dice{
+    text-align: center;
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#dice > div{
+    display: inline-block;
+    padding: 0 10px 0 10px;   
+}
+
+.rollButton{
+    font-family: Montserrat;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 1300px){
+    .crapsBoard{
+        float: none;
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+
+    #dice{
+        margin-top: 25px;
+        display: block;
+    }
+}

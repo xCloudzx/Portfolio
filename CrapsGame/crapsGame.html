@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Craps Game</title>
+
+        <link href="crapsGame.css" rel="stylesheet">
+
+        <script src="crapsGameE.js"></script>
+    </head>
+
+    <body>
+        <h1 class="topHeader">Craps Game</h1>
+        
+        <img class="crapsBoard" src="crapsBoard.png">
+
+        <div id="dice">
+            <div>
+                <img src="side_6.png">
+                <p>Roll: </p>
+            </div>
+
+            <div>
+                <img src="side_6.png">
+                <p>Roll: </p>
+            </div>
+
+            </br>
+            <p id="sumOutput" style="margin-top: 0;">Sum: </p>
+
+            <input class="rollButton" type="button" value="Roll"  onclick="gameLogic();"/>
+
+            <p id="rollNumberOutput">Roll Number: </p>
+            <p id="resultOutput"></p>
+            <p id="winsOutput">Wins: 0</p>
+            <p id="lossesOutput">Losses: 0</p>
+        </div>
+    </body>
+</html>

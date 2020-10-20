@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+
+body{
+    margin: 0;
+
+    /* Parallax */
+    background: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+hr{
+    width: 75%; height: 10px; background: gray; margin-bottom: 15px; border: none;
+}
+
+.topImage{
+    text-align: center;
+    background: linear-gradient(45deg, lightgreen, green);
+}
+
+.topImage img{
+    width: 30vw;
+}
+
+.responsiveP{
+    margin-top: 10px;
+    display: inline-block;
+    background: green;   
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 5px; 
+}
+
+.header{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.5em;
+    color: green;
+    text-align: center; 
+}
+
+.secondaryHeader{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    color: green;
+    margin: 0;
+}
+
+.questionForm{
+    margin: 2px 0 10px 10px;
+}
+
+.questionForm form{
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: black;
+}
+
+.questionForm div{
+    padding: 10px;
+}
+
+/* Center elements */
+.listingsContainer{
+    text-align: center;
+}
+
+.listingsContainer > div{
+    display: inline-block;
+    width: 20%;
+    padding: 10px;
+}
+
+.listingsContainer img{
+    border: 2px solid gray;
+    background: lightgray;
+    width: 100%;
+}
+
+.listingsContainer p{
+    padding: 5px;
+    background: gray;
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: white;
+}
+
+.listingsContainer input{
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+/* change size of listings and amount per line depending on screen size */
+@media screen and (max-width : 700px){
+.listingsContainer > div{
+    width: 50%;
+}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px){
+    .listingsContainer > div{
+        width: 40%;
+    }
+}
+
+.output{
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.output textarea{
+    background: gray;
+    border-radius: 25px;
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    padding: 15px;
+}

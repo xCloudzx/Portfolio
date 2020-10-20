@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipe</title>
+
+        <!--Icons-->
+        <script src="https://kit.fontawesome.com/8fbeccc6cb.js" crossorigin="anonymous"></script>
+        
+        <link href="recipe.css" rel="stylesheet">
+
+        <script src="recipe.js"></script>
+    </head>
+
+    <body>
+        <h1 class="segmentHeader">Ghee Rice with Potatoes</h1>
+        <div class="recipeTagContainer">
+            <h2 class="recipeTag">Total Time: 1 hr</h2>
+            <h2 class="recipeTag">Serving Size: 6</h2>
+            <h2 class="recipeTag">Vegetarian</h2>
+        </div>
+
+        <div class="instructions">
+            <div class="inBodyImage">
+                <img src="finished.jpg" alt="recipePicture1">
+                <p>A filling meal that will serve up to 6 people. The potatoes are soaked in gravy and served with garnished rice on the side.</p>
+            </div>
+
+            <p>My mom and her friends used to eat this all the time when she was in college because it was cheap. We made this meal together (thank you!).</p>
+            
+            <div class="ingredientsListContainer">
+                <a class="printRecipeButton" onclick="showPrintPopup();" target="_blank">Print Recipe</a>
+                <h2 class="segmentHeader" style="color: green; text-align: left;">Ingredients</h2>
+                <hr style="width: 75%; height: 5px; background-color: #36454f; border-style: none;">
+                <ul class="ingredientsList">
+                    <h4>Misc</h4>
+                    <hr>
+                    <li>Olive Oil</li>
+                    <li>Salt</li>
+                    <h4 style="font-style: italic">Spices</h4>
+                    <hr>
+                    <li>Star Anise</li>
+                    <li>Big Cardamom</li>
+                    <li>Bay Leaf</li>
+                    <h4>Potatoes</h4>
+                    <hr>
+                    <li>12 Sliced Potatoes</li>
+                    <li>Cheese or <a href="https://en.wikipedia.org/wiki/Paneer" target="_blank">Paneer</a></li>
+                    <li>Chopped Cilantro</li>
+                    <li>Chopped Chives</li>
+                    <h4>Onions and Bitter Gourd Mixture</h4>
+                    <hr>
+                    <li>1 Sliced Onion</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Momordica_charantia" target="_blank">Bitter Gourd</a></li>
+                    <h4>Gravy</h4>
+                    <hr>
+                    <li>Peanuts</li>
+                    <li>1 Sliced Onion</li>
+                    <li>Garlic Paste</li>
+                    <li>4 Tomatoes sliced into halves</li>
+                    <h4>Rice Garnish</h4>
+                    <hr>
+                    <li>Butter</li>
+                    <li>Cashews</li>
+                    <li>Raisins</li>
+                    <h4>Rice</h4>
+                    <hr>
+                    <li style="font-style: italic">Spices</li>
+                    <li>1.5 Cups of Rice</li>
+                    <li>1 Sliced Onion</li>
+                    <li>2 Green Chilis</li>
+                </ul>
+            </div>
+
+            <div class="stepbyStepInstructions">
+                <div class="slide" style="display: block;">
+                    <img src="bakedPotatoes.jpg">
+                    <h2 class="segmentHeader">Baked Potatoes</h2>
+                    <p>Brush the potatoes with oil and put in the oven for an hour at 350 degrees. Add cheese or paneer, cilantro, and chives on top when it is done. Broil for 2 minutes at 550 degrees.
+                    </p>
+                </div>
+
+                <div class="slide" style="display: none;">
+                    <img src="onionsAndBitterGourdMixture.jpg">
+                    <h2 class="segmentHeader">Onions and Bitter Gourd Mixture</h2>
+                    <p>Saute a sliced onion and bitter gourd together until crisp.</p>
+                </div>
+                
+                <div class="slide" style="display: none;">
+                    <img src="gravy.jpg">
+                    <h2 class="segmentHeader">Gravy</h2>
+                    <p>Roast peanuts and then another sliced onion, garlic paste, and all of the tomatoes. When it has cooled down, add two cups of water and blend the mixture. Move back to the pan, add salt, and cook.</p>
+                </div>
+                
+                <div class="slide" style="display: none;">
+                    <img src="riceGarnish.jpg">
+                    <h2 class="segmentHeader">Rice Garnish</h2>
+                    <p>Melt butter in another pot. Add cashews and raisins. Move the mixture to a plate when it's done.</p>
+                </div>
+
+                <div class="slide" style="display: none;">
+                    <img src="rice.jpg">
+                    <h2 class="segmentHeader">Rice</h2>
+                    <p>Roast the star anise, big cardamon, and bay leaf. Saute the last sliced onion with the green chilis. Add the rice and a pinch of salt. Move off the flame and add 6 cups of water. After 5 minutes, move it back to the flame for 20-30 minutes.</p>
+                </div>
+
+                <div class="slide" style="display: none;">
+                    <img src="finished.jpg">
+                    <h2 class="segmentHeader">Serve</h2>
+                    <p>
+                        Put the onion and bitter gourd mixture on the plate. Put the gravy on the plate and add the baked potatoes on top. Finally, put the rice on with the rice garnish on top of it. 
+                        </br>
+                        Optional: Serve with pickles, sliced tomatoes, and grapes on the side.
+                    </p>
+                </div>
+
+                <div class="icon clearfix">
+                    <div style="float: left;">
+                        <i style="cursor: pointer;" class="fas fa-arrow-left" onclick="previousSlide();"></i>
+                    </div>
+
+                    <div style="float: right;">
+                        <i style="cursor: pointer;" class="fas fa-arrow-right" onclick="nextSlide();"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

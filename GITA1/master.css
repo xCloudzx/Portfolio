@@ -1,0 +1,293 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	vertical-align: baseline;
+	font-size: 100%;
+	font-family: Roboto Slab;
+	letter-spacing: 0.05em;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	background-image: url("background.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1{margin:20px; font-size: 50px; color:black; font-family:Montserrat; font-weight:700;}
+
+h2{margin:20px; font-size: 35px; color:black; font-family:Montserrat; font-weight:600;}
+
+.Text {background-color:lightgray; border-radius:20px; box-shadow: 0 0 10px rgba(51, 51, 0, 0.8); padding:20px; margin-left:auto; margin-right:auto; font-size:16px;}
+
+hr{
+	border: none;
+	height: 3px;
+	background: black;
+	margin:auto;
+ }
+
+html {
+    overflow-x: hidden;
+}
+
+/* from w3 */
+* {
+  box-sizing: border-box;
+}
+
+.w3-content,.w3-auto{margin-left:auto;margin-right:auto}.w3-content{max-width:980px}.w3-auto{max-width:1140px}
+.w3-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
+.w3-tooltip,.w3-display-container{position:relative}.w3-tooltip .w3-text{display:none}.w3-tooltip:hover .w3-text{display:inline-block}
+.w3-display-bottomleft{position:absolute;left:0;bottom:0}.w3-display-bottomright{position:absolute;right:0;bottom:0}
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
+.w3-padding-16{padding-top:16px!important;padding-bottom:16px!important}.w3-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+.w3-large{font-size:18px!important}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that float next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: lightgray;
+  padding: 10px;
+  transition: transform .2s;
+  box-shadow: 0 0 10px rgba(51, 51, 0, 0.4);
+  border-radius: 25px;
+}
+
+.content hr{
+	background-color:black;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.content:hover {
+  transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* navbar */
+.topnav {
+	z-index: 99999;
+	height: 60px;
+	width: 100%;
+	background-color: #515A5A;
+	position: fixed;
+	top:0;
+	opacity:90%;
+}
+
+.topnav ul {
+	padding: 0;
+	margin: 0;
+}
+
+.topnav li {
+	display: inline;
+}
+	
+.topnav a {
+	display: inline-block;
+	width: 150px;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+	padding: 20px 0;
+	color: white;
+	transition: white 1s;
+}
+
+.topnav a:hover {
+	color: lightgray;
+}
+
+.topnav a#toggle-btn {
+	display: none;
+}
+
+a.codebutton {
+	-moz-box-shadow: 0px 1px 0px 0px #1c1b18;
+	-webkit-box-shadow: 0px 1px 0px 0px #1c1b18;
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6) );
+	background:-moz-linear-gradient( center top, #eae0c2 5%, #ccc2a6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6');
+	background-color:#eae0c2;
+	-webkit-border-top-left-radius:15px;
+	-moz-border-radius-topleft:15px;
+	border-top-left-radius:15px;
+	-webkit-border-top-right-radius:15px;
+	-moz-border-radius-topright:15px;
+	border-top-right-radius:15px;
+	-webkit-border-bottom-right-radius:15px;
+	-moz-border-radius-bottomright:15px;
+	border-bottom-right-radius:15px;
+	-webkit-border-bottom-left-radius:15px;
+	-moz-border-radius-bottomleft:15px;
+	border-bottom-left-radius:15px;
+text-indent:0;
+	border:2px solid #333029;
+	display:inline-block;
+	color:#505739;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+height:50px;
+	line-height:50px;
+width:140px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:0px 1px 0px #ffffff;
+}.codebutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2) );
+	background:-moz-linear-gradient( center top, #ccc2a6 5%, #eae0c2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2');
+	background-color:#ccc2a6;
+}.codebutton:active {
+	position:relative;
+	top:1px;
+}
+
+.tagtext{
+	margin-top:5px;
+	padding:8px; 
+	display:inline-block; 
+	background-color:silver;
+	border:1px solid gray;
+}
+
+.centerContainer{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.filter{
+    margin:2%;
+}
+
+.filter a{
+    margin-top:5px;
+    display: inline-block;
+    list-style-type: none;
+    background-color:gray;
+    text-align:center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color:white;
+    font-family: Roboto Slab;
+    text-transform: uppercase;
+    line-height:2em;
+    font-size:0.8em;
+    overflow:hidden;
+	position:relative;
+	letter-spacing:0.1em;
+}
+
+.activefilter{
+    background-color:black !important;
+}
+
+.contactInfo{
+	height: 100px;
+	width: 100%;
+	background-color: gray;
+	list-style-type: none;
+}
+.contactInfo li{
+	float:left;
+	padding:10px;
+
+}
+
+/*add padding between elements*/
+.contactInfo > li{
+	padding-right:20px;
+}
+
+.contactInfo li a{
+	/*stylize text*/
+	text-decoration: none;
+	color:black;
+	text-align:center;
+	cursor:pointer;
+	font-weight: 400;
+	padding-bottom:50px;
+}
+
+.contactInfo li a:hover{
+	font-weight:700;
+}.contactInfo li a:after {
+	/*sliding border from left to right under elements*/
+    transition: all ease-in-out .2s;
+    background: none repeat scroll 0 0 #ffffff;
+    content: "";
+	display: block;
+	margin-top:5px;
+    height: 3px;
+    width: 0;
+}.contactInfo li a:hover:after {
+	/*show on hover*/
+    width: 100%;
+}
+
+.contactInfo li a i{
+	/*separate icon from text*/
+	margin-right:10px;
+}
+

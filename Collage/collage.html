@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Collage</title>
+        <link href="collage.css" rel="stylesheet">
+
+        <script src="collage.js"></script>
+        <script>
+            //run JS onload
+            window.onload = function(){
+                placeImagesRandomly();
+                
+                //allow images to be dragged on body
+                var dm = document.getElementsByClassName("randomImage");
+                for (var i = 0; i < dm.length; i++) {
+                    dm[i].addEventListener("dragstart", drag_start, false);
+                    document.body.addEventListener("dragover", drag_over, false);
+                    document.body.addEventListener("drop", drop, false);
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <!--Fixed position paragraph-->
+        <div class="textTopRightFixed">
+            <p>All images can be repositioned.</p>
+        </div>
+
+        <!--Absolute-positioned image-->
+        <div class="absolute">
+            <div class="absoluteImage">
+                <p>
+                    My favorite game - Enemy On Board (Absolute Image)
+                </p>
+                <img src="enemyOnBoard.jpg">
+            </div>
+        </div>
+    </body>
+</html>

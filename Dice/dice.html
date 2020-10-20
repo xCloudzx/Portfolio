@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dice</title>
+
+        <link href="dice.css" rel="stylesheet">
+        <script src="diceE.js"></script>
+    </head>
+
+    <body>
+        <h1 class="topHeader">Dice</h1>
+
+        <div class="dice">
+            <div id="die1" class="die">
+                <img src="side_6.png">
+                <p>Roll: 6</p>
+            </div>
+
+            <div id="die2" class="die" style="margin-left: 100px;">
+                <img src="side_6.png">
+                <p>Roll: 6</p>
+            </div>
+            
+            <p id="sumText" class="sumP">Sum: 12</p>
+            <input type="button" value="Roll" class="rollButton" onclick="rollDice();"/>
+        </div>
+
+        <form class="output" name="outputForm">
+            <div>
+                <h2>Total Per Side</h2>
+                <textarea readonly name="txaOutputSides" cols="30" rows="15">
+
+                </textarea>
+            </div>
+
+            <div>
+                <h2>Total Per Sum</h2>
+                <textarea readonly name="txaOutputSums" cols="30" rows="15">
+
+                </textarea>
+            </div>
+        </form>
+    </body>
+</html>

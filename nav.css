@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+/* Default formatting is for mobile to load faster*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.topnav{
+    background-color: #FC4445;
+    text-align: center;
+    font-family: Source Code Pro, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.topnav > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/*Formatting for bigger screens*/
+
+@media only screen and (min-width: 768px) {
+    /*display each button on its own line*/
+    .topnav{
+        text-align: left;
+    }
+
+    .topnav > a{
+        display: inline;
+    }
+}

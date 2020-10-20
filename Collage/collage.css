@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:700");
+
+*{
+    margin: 0;
+}
+
+body{
+    /* Parallax */
+    background: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body, html{
+    min-height: 150vh;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.absoluteImage img{
+    z-index: 0;
+    display: block;
+    width: 400px;
+    height: 250px;
+}
+
+.absolute p{
+    padding: 5px;
+    top: 10px;
+    position: relative;
+    z-index: 100;
+    display: inline;
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.randomImage{
+    position: absolute;
+}
+
+.randomImage img{
+    position: relative;
+    display: block;
+    max-width: 400px;
+    max-height: 300px;
+    -webkit-user-drag: none;
+}
+
+.textTopRightFixed{
+    position: fixed;
+    top: 10px; 
+    right: 10px;
+    padding: 5px;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}

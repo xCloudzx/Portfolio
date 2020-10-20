@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:800");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+.segmentHeader{
+    font-family: Work Sans, Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.ingredientsList{
+    text-align: left;
+}
+
+.ingredientsList h4{
+    font-family: Work Sans, Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.ingredientsList li{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.instructions{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.instructions span{
+    font-weight: 800;
+}

@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:800");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color-adjust: exact; 
+    -webkit-print-color-adjust: exact;
+}
+
+.segmentHeader{
+    font-family: Work Sans, Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+.recipeTagContainer{
+    text-align: center;
+}
+
+.recipeTag{
+    display: inline-block;
+    margin-top: 10px;
+    font-family: Work Sans, Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: green;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: lightgreen;
+}
+
+.instructions > p{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    width: 80%;
+    margin: auto;
+}
+
+.inBodyImage{
+    width: 70%;
+    margin: 10px auto 10px auto;
+}
+
+.inBodyImage img{
+    max-width: 100%;
+    max-height: 400px;
+    display: block;
+    margin: auto;
+}
+
+.inBodyImage p{  
+    margin-top: 5px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.ingredientsListContainer{
+    background-color: lightgray; 
+    width: 33%; 
+    margin: 15px auto auto auto; 
+    border: 2px solid gray; 
+    word-wrap: break-word;
+}
+
+.printRecipeButton{
+    display: inline-block;
+    background-color: lightblue;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    border: 2px solid black;
+    cursor: pointer;
+    
+}.printRecipeButton:focus{
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.ingredientsList{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    list-style-type: square;
+}
+
+.ingredientsList h4{
+    padding-top: 15px;
+}
+
+.ingredientsList hr{
+   width: 25%; 
+   height: 3px; 
+   background-color: #36454f; 
+   border-style: none;
+}
+
+.ingredientsList li{
+    margin-left: 1em;
+}
+
+.stepbyStepInstructions{
+    width: 60%;
+    margin: 15px auto 0 auto;
+    border: 2px solid gray;
+    background-color: lightgray;
+}
+
+.slide img{
+    min-width: 50%;
+    max-height: 50vh;
+    display: block;
+    margin: auto;
+}
+
+.slide p{
+    padding: 5px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    width: 80%;
+    margin: auto;
+}
+
+.icon{
+    font-size: 2em;
+}
+
+/* keep icons inside div */
+.clearfix:after {
+    display: block;
+    content: " ";
+    clear: both;
+}

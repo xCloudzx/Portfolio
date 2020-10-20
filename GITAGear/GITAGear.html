@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gita Gear</title>
+
+        <link href="GITAGear.css" rel="stylesheet">
+        <script src="GITAGear.js"></script>
+    </head>
+
+    <body>
+        <div class="topImage">
+            <img src="GITALogo.png">
+        </div>
+
+        <div style="text-align: center;">
+            <p class="responsiveP">This website is responsive, resize the browser to see the effect.</p>
+        </div>
+
+        <h1 class="header" style="margin-top: 0;">GITA Store</h1>
+        <div class="questionForm">
+            <h2 class="secondaryHeader">Grade</h2>
+            <form name="discountsForm">
+                <div><input type="radio" name="discountsRadio" value="Freshman" id="radFreshman"><label for="radFreshman">Freshman</label></input></div>
+                <div><input type="radio" name="discountsRadio" value="Sophomore" id="radSophomore"><label for="radSophomore">Sophomore</label></input></div>
+                <div><input type="radio" name="discountsRadio" value="Junior" id="radJunior"><label for="radJunior">Junior</label></input></div>
+                <div><input type="radio" name="discountsRadio" value="Senior" id="radSenior"><label for="radSenior">Senior</label></input></div>
+            </form>
+
+            <h2 class="secondaryHeader">Survey - Siblings in GITA?</h2>
+            <form name="surveyForm">
+                <div><input type="checkbox" name="chkBrother" value="Brother" id="chkBrother"><label for="chkBrother">Brother</label></input></div>
+                <div><input type="checkbox" name="chkSister" value="Sister" id="chkSister"><label for="chkSister">Sister</label></input></div>
+            </form>
+        </div>
+
+        <div class="listingsContainer">
+            <div>
+                <img src="poloShirt.png">
+                <p>Polo Shirt - $15</p>
+
+                <form name="poloShirtForm">
+                    <!--User can only input a positive whole number-->
+                    <p>Quantity: <input type="number" min="0" oninput="validity.valid||(value='');" name="txtPoloShirt" value=""/></p>
+                </form>
+            </div>
+
+            <div>
+                <img src="mousePad.png">
+                <p>Mouse Pad - $5</p>
+
+                <form name="mousePadForm">
+                    <p>Quantity: <input type="number" min="0" oninput="validity.valid||(value='');" name="txtMousePad" value=""/></p>
+                </form>
+            </div>
+
+            <div>
+                <img src="sticker.jpg">
+                <p>Sticker - $1.50</p>
+
+                <form name="stickerForm">
+                    <p>Quantity: <input type="number" min="0" oninput="validity.valid||(value='');" name="txtSticker" value=""/></p>
+                </form>
+            </div>
+
+            <div>
+                <img src="banner.png">
+                <p>Banner - $12</p>
+
+                <form name="bannerForm">
+                    <p>Quantity: <input type="number" min="0" oninput="validity.valid||(value='');" name="txtBanner" value=""/></p>
+                </form>
+            </div>
+
+            <form name="orderForm">
+                <input style="font-size: 1.5em;" type="button" name="btnOrder" value="Order" onclick="calculate(poloShirtForm.txtPoloShirt, mousePadForm.txtMousePad, stickerForm.txtSticker, bannerForm.txtBanner);"/>
+            </form>
+        </div>
+
+        <h1 class="header" style="margin-bottom: 0;">Order Information</h1>
+        <hr>
+
+        <form class="output" name="outputForm">
+            <textarea readonly name="txaoutputField" rows="15" cols="40"></textarea>
+        </form>
+    </body>
+</html>
